@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Booki</title>
 </head>
+
 <body>
-    <header>
-        <p>Header</p>
-        <p>Booki</p>
-        <p>Hébergement</p>
-        <p>Activité</p>
+    <header class="header-nav">
+        <a href="./index.html"><img id="logo" src="images/logo/Booki.png"></a>
+        <nav>
+            <a href="#hebergement">Hébergement</a>
+            <a href="#activite">Activité</a>
+        </nav>
     </header>
     <main>
-        <p>main</p>
-        <section>
+        <div>
+            <p>Trouver votre hébergement pour des vacances de rêve</p>
+            <p>En plein centre-ville ou en pleine nature</p>
+            <input type="text" id="search" name="rechercher">
+            <nav>
+                <p>Filtres</p>
+                <button><i class="fa fa-bolt"></i>Economique</button>
+                <button><i class="fa fa-bolt"></i>Familial</button>
+                <button><i class="fa fa-bolt"></i>Romantique</button>
+                <button><i class="fa fa-bolt"></i>Animaux autorisés</button>
+            </nav>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+        <section id="hebergement">
             <p>Hébergement</p>
         </section>
-        <section>
+        <section id="activite">
             <p>Activité</p>
         </section>
     </main>
@@ -26,4 +43,5 @@
         <p>footer</p>
     </footer>
 </body>
+
 </html>
