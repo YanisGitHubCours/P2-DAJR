@@ -1,0 +1,15 @@
+body {
+    background-color: F2F2F2;
+}
+
+.header-nav-style {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-style {
+    display: flex;
+    justify-content: center;
+}
