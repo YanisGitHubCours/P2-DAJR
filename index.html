@@ -6,35 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2f567fdf59.js" crossorigin="anonymous"></script>
     <title>Booki</title>
 </head>
 
 <body>
-    <header class="header-nav">
-        <a href="./index.html"><img id="logo" src="images/logo/Booki.png"></a>
+    <header>
+        <a href="./index.html"><img src="images/logo/Booki.png" height="20"></a>
         <nav>
-            <a>Hébergement</a>
-            <a>Activité</a>
+            <a href="#">Hébergement</a>
+            <a href="#">Activité</a>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+        <section class="section-search">
+            <h2>Trouver votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre-ville ou en pleine nature</p>
-            <input type="text" id="search" name="rechercher">
-            <nav>
-                <h1>Filtres</h1>
-                <button><i class="fa fa-bolt"></i>Economique</button>
-                <button><i class="fa fa-bolt"></i>Familial</button>
-                <button><i class="fa fa-bolt"></i>Romantique</button>
-                <button><i class="fa fa-bolt"></i>Animaux autorisés</button>
-            </nav>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <form class="search-form">
+                <div>
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                </div>
+                <input type="text" id="search" name="rechercher">
+                <button type="submit"></button>
+            </form>
+            <div class="filtres">
+                <label>Filtres</label>
+                <div>
+                    <a href="#">
+                        <i class="fa-sharp fa-solid fa-money-bill-wave"></i>
+                        <p>Économique</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa-sharp fa-solid fa-person"></i>
+                        <p>Familial</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa-sharp fa-solid fa-heart"></i>
+                        <p>Romantique</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa-sharp fa-solid fa-dog"></i>
+                        <p>Animaux autorisés</p>
+                    </a>
+                </div>
+            </div>
+            <div class="about">
+                <div>
+                    <i class="fa-sharp fa-solid fa-info"></i>
+                </div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </section>
+        
         <section id="hebergement-populaire">
             <section class="hebergement">
-                <h1>Hébergement à Marseille</h1>
+                <h2>Hébergement à Marseille</h2>
                 <a>Auberge la canebiere<img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"></a>
                 <a>Hôtel du Port<img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"></a>
                 <a>Hôtel Les mouettes<img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"></a>
@@ -43,38 +69,39 @@
                 <a>Hôtel Chez Amina<img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"></a>
             </section>
             <article>
-                <h1>Les plus populaires</h1>
+                <h2>Les plus populaires</h2>
                 <a><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">Hôtel Le soleil du matin</a>
                 <a><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">Chambres d’hôtes Au cœur de l’eau</a>
                 <a><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">Hôtel Bleu et Blanc</a>
             </article>
         </section>
-        <section class="activity">
-            <p>Activité à Marseille</p>
-            <a><img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">Vieux-Port</a>
-            <a><img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">Fort de Pomègues</a>
-            <a><img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">Parc national des Calanques</a>
-            <a><img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">Notre-Dame-de-la-Garde</a>
+        <section class="section-activity">
+            <h2>Activité à Marseille</h2>
+            <div class="activity">
+                <a><img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"><h3>Vieux-Port</h3></a>
+                <a><img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"><h3>Fort de Pomègues</h3></a>
+                <a><img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"><h3>Parc national des Calanques</h3></a>
+                <a><img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"><h3>Notre-Dame-de-la-Garde</h3></a>
+            </div>
         </section>
     </main>
     <footer>
-        <section class="section-footer">
-            <div>
-                <h1>À propos</h1>
-                <p>Fonctionnement du site</p>
-                <p>Conditions générales </p>
-                <p>Données et confidentialité</p>
+            <div class="div-footer">
+                <h2>À propos</h2>
+                <a>Fonctionnement du site</a>
+                <a>Conditions générales </a>
+                <a>Données et confidentialité</a>
             </div>
-            <div>
-                <h1>Nos hébergements</h1>
-                <p>Charte qualité</p>
-                <p>Proposer votre hôtel</p>
+            <div class="div-footer">
+                <h2>Nos hébergements</h2>
+                <a>Charte qualité</a>
+                <a>Proposer votre hôtel</a>
             </div>
-            <div>
-                <h1>Assistance</h1>
-                <p>Centre d’aide</p>
+            <div class="div-footer">
+                <h2>Assistance</h2>
+                <a>Centre d’aide</a>
+                <a>Nous contacter</a>
             </div>
-        </section>
     </footer>
 </body>
 
